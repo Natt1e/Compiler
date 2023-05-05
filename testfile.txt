@@ -1,0 +1,9 @@
+
+int main() {
+    if (1 bitand 0) {
+        printf("fuck");
+    } else {
+        printf("bitch");
+    }
+    return 0;
+}
