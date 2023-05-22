@@ -66,7 +66,7 @@
 
 整体的状态转移图如下：
 
-![image-20221216142545450](.\文档\status.png)
+![image-20221216142545450](https://github.com/Natt1e/Compiler/blob/master/%E6%96%87%E6%A1%A3/status.png)
 
 # 语法分析设计
 
@@ -97,7 +97,7 @@ MulExp --> UnaryExp ( (* | / | %) UnaryExp )*
 
 加入新符号时，仅查询本表中是否有重名变量。而查询符号时，从本表开始逐级向上查询，找到最近的一个即可，很好地满足了内部符号覆盖外部符号的要求。
 
-![image-20221216143139280](.\文档\table.png)
+![image-20221216143139280](https://github.com/Natt1e/Compiler/blob/master/%E6%96%87%E6%A1%A3/table.png)
 
 - FormatString中含非法符号：对每一处FormatString作检查，当检测到非法符号时，即记录错误
 - 变量重定义、变量未定义便使用：按照上述建立符号表。
